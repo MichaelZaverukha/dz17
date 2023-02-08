@@ -12,6 +12,46 @@
    <title>dz17</title>
 </head>
 <body>
+   <header>
+      <div class="header">
+         <div class="header__holder">
+               <div class="header__block">
+                  <a href="/" class="header__logo">
+                     <img src="./images/Logo.svg" alt="logo">
+                  </a>
+                  <div class="row-reverse">
+                     <div class="search-text"><input type="checkbox" class="search">
+                     <input type="text" class="text"></div>
+                     <input type="checkbox" class="hamburger">
+                     <div class="header__inputs">
+                        <img src="./images/search.svg" alt="search" class="search__pointer">
+                        <div class="header__menu">
+                           <span class="header__list"></span>
+                           <span class="header__list"></span>
+                           <span class="header__list"></span>
+                        </div>
+                     </div>
+                     <nav class="header__nav">
+                        <ul>
+                           <a href="#blog">
+                              <li class="header__item">Blog</li>
+                           </a>
+                           <a href="#latest-posts">
+                              <li class="header__item">Latest Posts</li>
+                           </a>
+                           <a href="#popular">
+                              <li class="header__item">The Most Popular</li>
+                           </a>
+                           <a href="#need">
+                              <li class="header__item">Need a project?</li>
+                           </a>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+         </div>
+      </div>
+   </header>
    <main>
       <section class="tagline">
          <div class="tagline__block">
@@ -20,7 +60,7 @@
          </div>
       </section>
       <section class="main-section">
-         <div class="blog">
+         <div class="blog" id="blog">
             <h2 class="blog__header">Blog</h2>
             <div class="blog__first block">
                <div class="block__holder">
@@ -53,7 +93,7 @@
                </div>
             </div>
          </div>
-         <div class="latest-posts">
+         <div class="latest-posts" id="latest-posts">
             <div class="latest-posts__header">
                <h2>Latest Posts</h2>
                <p class="view">View All &#8594</p>
@@ -118,7 +158,7 @@
                </div>
             </div>
          </div>
-            <div class="popular">
+            <div class="popular" id="popular">
                <div class="popular__header">
                   <h2>The Most Popular</h2>
                   <p class="view">View All &#8594</p>
@@ -185,7 +225,7 @@
       </section>
    </main>
    <footer>
-      <section class="footer__section">
+      <section class="footer__section" id="need">
          <div class="footer__holder">
             <div class="contacts">
                <h2 class="contacts__header">Need a project?</h2>

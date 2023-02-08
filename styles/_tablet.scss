@@ -1,11 +1,35 @@
+.header{
+   @media screen and (min-width:768px){
+      max-width: 1200px;
+      margin: 0 auto;
+      &__holder{
+         padding-right: 35px;
+         padding-left: 35px;
+      }
+      &__nav{
+         a{
+            font-size: 30px;
+         }
+      }
+      .search:checked ~ .text{
+         display: block;
+         width: 200px;
+         border-radius: 5px;
+         position: absolute;
+         right: 80px;
+         top: 0;
+      }
+   }
+   
+}
+
 .tagline{
    @media screen and (min-width:768px){
       background: url(../images/tabletbg-image.jpg);
       background-size: cover;
       background-position: center center;
-      max-width: 1084px;
+      max-width: 1200px;
       margin: 0 auto;
-      margin-top: 60px;
       &__block{
          padding: 30px 34px 190px 34px;
       }
@@ -18,7 +42,7 @@
 .main-section{
    @media screen and (min-width:768px){
       padding: 0 34px;
-      max-width: 1084px;
+      max-width: 1200px;
       margin: 0px auto;
    }
 }
@@ -35,6 +59,7 @@
    @media screen and (min-width:768px){
       display: flex;
       flex-direction: row-reverse;
+      justify-content: flex-end;
       gap: 20px;
    }
 }
@@ -155,7 +180,7 @@
 .additional{
    @media screen and (min-width:768px){
       padding: 0 34px;
-      max-width: 1084px;
+      max-width: 1200px;
       margin: 0px auto;
       &__block{
          margin-top: 50px;         
@@ -176,7 +201,7 @@
 .footer__section{
    @media screen and (min-width:768px){
       padding: 0 34px;
-      max-width: 1084px;
+      max-width: 1200px;
       margin: 0px auto;
       padding-top: 50px;
       .contacts__header{
